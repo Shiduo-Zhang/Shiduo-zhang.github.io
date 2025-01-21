@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiduo Zhang - Homepage</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2ZLMKHR2E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R2ZLMKHR2E');
+  </script>
+
+  <script>
+    function loadWordCloud() {
+      const traits = [
+      ["Leader", 30],
+      ["Instructor", 15],
+      ["Connector", 25],
+      ["Smart", 15],
+      ["Mature", 20],
+      ["Impact-Driven", 40],
+      ["Resilience", 30],
+      ["Passionate", 20],
+      ["Faithful", 30],
+      ["Confident", 20]
+      ["Innovative", 15],
+      ["Questioner", 30],
+      ["Insightful", 40],
+      ["Visionary", 20],
+      ["Emotionally Stable", 25],
+      ];
+
+      const canvas = document.getElementById("word-cloud");
+      
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      WordCloud(canvas, {
+        list: traits, // 使用特性词语列表
+        gridSize: Math.round(16 * window.innerWidth / 1024), // 网格大小，随屏幕变化调整
+        weightFactor: window.innerWidth / 400, // 字体大小比例
+        fontFamily: "Times, serif", // 字体
+        color: function () {
+          const colors = ["#1E88E5", "#F4511E", "#43A047", "#FB8C00", "#5E35B1"];
+          return colors[Math.floor(Math.random() * colors.length)];
+        },
+        // backgroundColor: "#F0F4F8", // 柔和背景色
+        rotateRatio: 0., // 减少文字旋转
+        shuffle: true, // 随机排列单词
+        shape: "circle", // 圆形布局
+        drawOutOfBound: false,
+      });
+    }
+  </script>
+
+  <!-- load 3d hobby word cloud -->
+  <script>
+      window.onload = function () {
+      try {
+        TagCanvas.Start('word-cloud', 'tags', {
+          textColour: '#FFFFFF',
+          outlineColour: 'rgba(255, 255, 255, 0.5)',
+          reverse: true,
+          depth: 0.8,
+          maxSpeed: 0.01,
+          textFont: 'Papyrus, Arial, sans-serif',
+          textHeight: 20,
+          shuffleTags: true,
+          initial: [0.3, 0.3],
+          decel: 0.98,
+          dragControl: true,
+          weight: true,
+          shape: 'spiral',
+          tooltip: true
+
+        });
+      } catch (e) {
+        console.error('Canvas initialization error:', e);
+      }
+    };
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.0.6/wordcloud2.min.js"></script>
+  <script src="https://www.goat1000.com/tagcanvas.min.js"></script>
+</head>
+
+<body>
+
+<div style="background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('./media/occupacy.jpg');background-size: cover; background-position: center;padding-bottom: 20px;">
+  <nav class="navbar is-primary">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <strong>Hey! Joey!</strong>
+        </a>
+    </div>
+
+    <div id="top-navbar" class="navbar-menu">
+        <div class="navbar-end">
+            <a class="navbar-item" href="#about">
+                About Me
+            </a>
+            <a class="navbar-item" href="#news">
+                News
+            </a>
+            <a class="navbar-item" href="#publications">
+                Publications
+            </a>
+            <a class="navbar-item" href="#projects">
+                Projects
+            </a>
+            <a class="navbar-item" href="#blogs">
+                Blogs
+            </a>
+        </div>
+    </div>
+  </nav>
+  <div class="container has-text-centered">
+    <div style="display: flex; justify-content: space-between; align-items: center; height: 300px;">
+      <div style="flex: 1;display: flex; justify-content: center; align-items: center;">
+        <div class="card-container">
+          <!-- Dynamic Cards -->
+          <div class="card active">
+            <div class="card-title">A Good Leader</div>
+            <div class="card-description">A person who inspires and motivates others to achieve their goals.</div>
+          </div>
+          <div class="card active">
+            <div class="card-title">An Experience Instructor</div>
+            <div class="card-description">A person who inspires and motivates others to achieve their goals.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Cognitive Level Far Above Peers</div>
+            <div class="card-description">Possesses exceptional cognitive abilities that stand out among peers.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Only Conduct Impactful Research</div>
+            <div class="card-description">Focuses solely on research that makes a significant difference.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Resilience and Tolerance</div>
+            <div class="card-description">Trains oneself to handle challenges and tolerate frustrations effectively.</div>
+          </div>
+      
+          <!-- Arrow Buttons -->
+          <button class="arrow-btn arrow-left" id="prev-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="arrow-btn arrow-right" id="next-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    
+      <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <figure class="image is-128x128 is-inline-block" style="width: 200px; height: 200px; margin: 0;">
+          <img class="is-rounded" src="./media/personal.jpg" alt="Avatar" style="width: 100%; height: 100%;">
+        </figure>
+      </div>
+  
+      <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <div id="canvas-container">
+          <canvas id="word-cloud" width="400" height="300"></canvas>
+          <ul id="tags">
+            <li><a href="#" title="A good team leader">Leader</a></li>
+            <li><a href="#">Instructor</a></li>
+            <li><a href="#">Connector</a></li>
+            <li><a href="#">Smart</a></li>
+            <li><a href="#">Mature</a></li>
+            <li><a href="#">Impact-Driven</a></li>
+            <li><a href="#">Resilience</a></li>
+            <li><a href="#">Passionate</a></li>
+            <li><a href="#">Faithful</a></li>
+            <li><a href="#">Confident</a></li>
+            <li><a href="#">Innovative</a></li>
+            <li><a href="#">Questioner</a></li>
+            <li><a href="#">Insightful</a></li>
+            <li><a href="#">Visionary</a></li>
+            <li><a href="#">Emotionally Stable</a></li>
+            <li><a href="#">Bold Endeavor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 class="title is-size-3-tablet is-size-4-mobile" style="font-family: Futura;">
+      Dream Big, Work Hard, Stay Humble.
+    </h1>
+    <p class="subtitle is-size-4-tablet is-size-5-mobile" style="font-family: Brush Script MT;">
+      ——Be Versatile, Be Great.
+    </p>
+    <div class="icon-box">
+      <a href="https://github.com/Shiduo-zh" target="_blank">
+          <i class="fab fa-github"></i>
+      </a>
+      <a href="https://scholar.google.com/citations?user=VriNXO4AAAAJ&hl=en" target="_blank">
+          <i class="fas fa-graduation-cap"></i>
+      </a>
+      <a href="https://x.com/Joey_zh_" target="_blank">
+          <i class="fab fa-twitter"></i>
+      </a>
+      <a href="mailto:sdzhang23@m.fudan.edu.cn">
+          <i class="fas fa-envelope"></i>
+      </a>
+  </div>
+  </div>
+</div>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div id="about">
+      <h1 class="title is-3">🎄 About Me</h1>
+    </div>
+    <div>
+      <p class="text-homepage-1">
+        Hi there! Here is Shiduo Zhang, you can call me Joey as well. I am a second-year master’s student in School of Computer Science at Fudan University 🐣, advised by <a href="https://xpqiu.github.io/en.html">Prof.Xipeng Qiu</a>.
+        My research interests focus on embodied AI, particularly exploring the intersection of foundation models and robotics. 
+        Previously, I obtained my Bachelor’s degree from Tongji University, and spent an unforgettable year and a half as a research assistant intern at <a href="https://group.iiis.tsinghua.edu.cn/~marslab/#/">MARS Lab</a>, <a href="https://iiis.tsinghua.edu.cn/en/">Tsinghua IIIS</a> and <a href="https://sqz.ac.cn/">Shanghai QiZhi Institute</a> during my undergraduate studies, advised by <a href="https://hangzhaomit.github.io/">Prof.Hang Zhao</a>.
+      </p>
+      <p class="text-homepage-1">
+        <br>Personally, I am dedicated to addressing <span style="font-weight: bold;color: #ee1212;">truly meaningful research problems</span>, 
+        and I tend to focus on work that aligns with <strong>first principles</strong>. The most fundamental issues I currently believe in are <span style="font-weight: bold;color: #ee1212;">Scaling</span> and <span style="font-weight: bold;color: #ee1212;">Search</span>. Feel free to contact me anytime if you share the same passion for these problems.
+      </p>
+    </div>
+  </div>
+  
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div id="news">
+      <h1 class="title is-3" style="margin-bottom: 1ex;">🔥 News</h1>
+    </div>
+    <div>
+      <!-- <div style="display: flex;justify-content: flex-start; align-items: center; margin-bottom: 15px;">
+        <span style="font-weight: bold;margin-right: 67px;">2025.1.3</span>
+        <span>Talk at MSRA, Beijing.</span>
+      </div> -->
+      <div style="display: flex;justify-content: flex-start; align-items: center; margin-bottom: 15px;">
+        <span style="font-weight: bold;margin-right: 50px;">2024.12.25</span>
+        <span>VLABench Preview Version was released!</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div id="publications">
+      <h1 class="title is-3" style="margin-bottom: 1ex;">📑 Publications</h1>
+    </div>
+    <div class="paper-container">
+      <img src="./media/main_page.jpg" alt="Overview" class="paper-image">
+      <div class="paper-content">
+        <h2 class="paper-title">VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks</h2>
+        <p class="paper-authors">
+          <strong>Shiduo Zhang</strong>, Zhe Xu, Peiju Liu, Xiaopeng Yu, Yuan Li, Qinghui Gao, Zhaoye Fei, Zhangyue Yin, Zuxuan Wu, Yu-Gang Jiang & Xipeng Qiu
+        </p>
+        <p class="paper-description">
+         "First benchmark for VLA. Not only for evaluation, definition matters most."
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2412.18194" target="_blank" class="paper-link">[Paper]</a>
+          <a href="https://vlabench.github.io/" target="_blank" class="paper-link">[Project Page]</a>
+          <a href="https://github.com/OpenMOSS/VLABench" target="_blank" class="paper-link">[Code]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="paper-container">
+      <img src="./media/pipeline.gif" alt="Overview" class="paper-image">
+      <div class="paper-content">
+        <h2 class="paper-title">Large Trajectory Models are Scalable Motion Predictors and Planners</h2>
+        <p class="paper-authors">
+          Qiao Sun<sup>*</sup>, <strong>Shiduo Zhang<sup>*</sup></strong> , Danjiao Ma, Jingzhe Shi, Derun Li, Simian Luo, Yu Wang, Ningyi Xu, Guangzhi Cao & Hang Zhao
+        </p>
+        <p class="paper-description">
+         "First work to scale casual transformer in Autonomous Driving. Previous SOTA at NuPlan."
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2310.19620" target="_blank" class="paper-link">[Paper]</a>
+          <a href="https://github.com/Tsinghua-MARS-Lab/StateTransformer" target="_blank" class="paper-link">[Code]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="paper-container">
+      <img src="./media/example_moss_search.gif" alt="Overview" class="paper-image">
+      <div class="paper-content">
+        <h2 class="paper-title">MOSS: An Open Conversational Large Language Model</h2>
+        <p class="paper-authors">
+          Tianxiang Sun, Xiaotian Zhang, Zhengfu He, Peng Li, Qinyuan Cheng, Xiangyang Liu, Hang Yan, Yunfan Shao, Qiong Tang, <strong>Shiduo Zhang</strong>, Xingjian Zhao, Ke Chen, Yining Zheng, Zhejian Zhou, Ruixiao Li, Jun Zhan, Yunhua Zhou, Linyang Li, Xiaogui Yang, Lingling Wu, Zhangyue Yin, Xuanjing Huang, Yu-Gang Jiang & Xipeng Qiu
+        </p>
+        <p class="paper-description">
+         "First open source large language model after ChatGPT moment. Github star 12k+."
+        </p>
+        <p>
+          <a href="https://link.springer.com/article/10.1007/s11633-024-1502-8" target="_blank" class="paper-link">[Paper]</a>
+          <a href="https://huggingface.co/datasets/fnlp/moss-003-sft-data" target="_blank" class="paper-link">[Hugging Face]</a>
+          <a href="https://github.com/OpenMOSS/MOSS" target="_blank" class="paper-link">[Code]</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div id="projects">
+      <h1 class="title is-3">⚙️ Projects</h1>
+    </div>
+    <div class="paper-container">
+      <img src="./media/pandai_gif.gif" alt="Overview" class="paper-image">
+      <div class="paper-content">
+        <h2 class="paper-title"> </span></h2>
+        <h2 class="paper-title" style="display: flex; justify-content: space-between; align-items: center;">
+          AgentSim2: A Large-Scale Agent Town Driven by Large Language Models
+          <span style="margin-left: auto;font-size: 16px;">2024.2-2024.5</span>
+        </h2>
+        <p class="paper-authors">
+          Jiaju Lin<sup>*</sup>, <strong>Shiduo Zhang</strong><sup>*</sup>
+        </p>
+        <p class="paper-description">
+         "The second version of AgentSim. A much larger ai town than <a href="https://arxiv.org/pdf/2304.03442">Stanford one</a>."
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2412.18194" target="_blank" class="paper-link">[Paper]</a>
+          <a href="https://vlabench.github.io/" target="_blank" class="paper-link">[Project Page]</a>
+          <a href="https://github.com/OpenMOSS/VLABench" target="_blank" class="paper-link">[Code]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="paper-container">
+      <img src="./media/architexture.png" alt="Overview" class="paper-image">
+      <div class="paper-content">
+        <h2 class="paper-title" style="display: flex; justify-content: space-between; align-items: center;">
+          Generalizing Motion Planners with Mixture of Experts for Autonomous Driving
+          <span style="margin-left: auto;font-size: 16px;">2023.12-2024.2</span>
+        </h2>
+        <p class="paper-authors">
+          Main idea provided by <strong>Shiduo Zhang</strong>.
+        </p>
+        <p class="paper-description">
+         "Introduce MoE to autonomous driving, proposed by me. Due to time constraints, I only contributed to the idea and baseline in early discussions."
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2412.18194" target="_blank" class="paper-link">[Paper]</a>
+          <a href="https://vlabench.github.io/" target="_blank" class="paper-link">[Project Page]</a>
+          <a href="https://github.com/OpenMOSS/VLABench" target="_blank" class="paper-link">[Code]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="paper-container">
+      <img src="./media/rpa.gif" alt="Overview" class="paper-image">
+      <div class="paper-content">
+        <h2 class="paper-title" style="display: flex; justify-content: space-between; align-items: center;">
+          General Intelligent Agent for Computer Usage: A Method to Robotics Process Automation AI.
+          <span style="margin-left: auto;font-size: 16px;">2022.5-2022.11</span>
+        </h2>
+        <p class="paper-authors">
+          <strong>Shiduo Zhang</strong>, Ziwen Zhuang & Hang Zhao
+        </p>
+        <p class="paper-description">
+         "A <span style="font-weight: bold;color: #ee1212;">highly forward-thinking and insightful idea!</span>. Using mouse control for general-purpose RPA tasks. Just like Claude’s work in October 2024. However, our practice began two years earlier, in a time before GPT."
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2412.18194" target="_blank" class="paper-link">[Paper]</a>
+          <a href="https://vlabench.github.io/" target="_blank" class="paper-link">[Project Page]</a>
+          <a href="https://github.com/OpenMOSS/VLABench" target="_blank" class="paper-link">[Code]</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="paper-container">
+      <img src="./media/quad_avoid.gif" alt="Overview" class="paper-image">
+      <div class="paper-content">
+        <h2 class="paper-title" style="display: flex; justify-content: space-between; align-items: center;">
+          Vision-Guided Quadrupedal Agile Locomotion with Multi-Modal Information Fusion
+          <span style="margin-left: auto;font-size: 16px;">2021.12-2022.8</span>
+        </h2>
+        <p class="paper-authors">
+          <strong>Shiduo Zhang</strong>, Ziwen Zhuang & Hang Zhao
+        </p>
+        <p class="paper-description">
+         "One of the earliest projects on locomotion. Concurrent work of Legged Gym."
+        </p>
+        <p>
+          <a href="https://arxiv.org/abs/2412.18194" target="_blank" class="paper-link">[Paper]</a>
+          <a href="https://vlabench.github.io/" target="_blank" class="paper-link">[Project Page]</a>
+          <a href="https://github.com/OpenMOSS/VLABench" target="_blank" class="paper-link">[Code]</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div>
+      <h1 class="title is-3" style="margin-bottom: 1em;">Academic Service</h1>
+    </div>
+    <div style="display: flex;justify-content: flex-start; align-items: center; margin-bottom: 15px;">
+      <span style="font-weight: bold;margin-right: 83px;">Academic Talk</span>
+      <span>Give a talk at MSRA, Beijing.</span>
+      <span></span>
+    </div>
+    <div style="display: flex;justify-content: flex-start; align-items: center; margin-bottom: 15px;">
+      <span style="font-weight: bold;margin-right: 50px;">Teaching Assistant</span>
+      <span>Pattern Recognition and Machine Learning (COMP130137.01 & AIE410001.01)</span>
+    </div>
+  </div>
+</section>
+
+<section class="blogs">
+  <div class="container is-max-desktop">
+    <div id="blogs">
+      <h1 class="title is-3" style="margin-bottom: 1ex;">Blogs</h1>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Edit by Joey@2025.1.1
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<!-- character card -->
+<script>
+  const cards = document.querySelectorAll('.card');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  let currentIndex = 0;
+
+  // Function to show the current card
+  function showCard(index) {
+    cards.forEach((card, i) => {
+      card.classList.remove('active');
+      if (i === index) {
+        card.classList.add('active');
+      }
+    });
+  }
+
+  // Handle Previous Button
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
+  });
+
+  // Handle Next Button
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  });
+
+  // Optionally: Auto switch cards every 5 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  }, 5000);
+</script>
+</html>
