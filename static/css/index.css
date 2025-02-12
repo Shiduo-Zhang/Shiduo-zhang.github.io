@@ -296,6 +296,12 @@ html {
   
 }
 
+.paper-conf{
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 5pt;
+}
+
 #canvas-container {
   position: relative;
   margin: auto;
